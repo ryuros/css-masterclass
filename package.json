@@ -19,7 +19,7 @@
   "dependencies": {
     "postcss-preset-env": "^6.5.0"
   },
-  "podtcss":{
+  "postcss":{
     "plugins":{
       "postcss-preset-env":{
         "stage": 0
