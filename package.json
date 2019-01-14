@@ -15,5 +15,15 @@
   "homepage": "https://github.com/ryuros/css-masterclass#readme",
   "scripts": {
     "start": "parcel index.html"
+  },
+  "dependencies": {
+    "postcss-preset-env": "^6.5.0"
+  },
+  "podtcss":{
+    "plugins":{
+      "postcss-preset-env":{
+        "stage": 0
+      }    
+    }
   }
 }
