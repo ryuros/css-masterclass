@@ -1,0 +1,19 @@
+{
+  "name": "css-masterclass",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryuros/css-masterclass.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryuros/css-masterclass/issues"
+  },
+  "homepage": "https://github.com/ryuros/css-masterclass#readme",
+  "scripts": {
+    "start": "parcel index.html"
+  }
+}
