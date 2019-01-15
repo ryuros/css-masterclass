@@ -1,0 +1,138 @@
+:root {
+    --colorOne: #d5ecf4;
+    --colorTwo: #e5efd9;
+    --colorThree: #fcf8c0;
+    --colorFour: #ebebeb;
+    --colorFive: #f4c5c3;
+    --colorSix: #e5efd8;
+    --colorSeven: #fcf8c0;
+  }
+
+
+  body{
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  ul{
+      list-style: none;
+  }
+
+  ul,
+  li{
+    margin:0;
+    padding:0;
+  }
+
+  .threeGrid{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+  }
+
+  .header{
+      margin-top: 50px;
+      margin-bottom: 120px;
+  }
+
+  .header h1{
+      margin-top: 0;
+      font-size: 60px;
+  }
+
+  .header .header__column {
+      display: flex;
+      justify-content: space-around;
+  }
+
+  .header__nav span{
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      text-decoration: underline;
+      display:block;
+      margin-bottom: 10px;
+      color: rgba(0,0,0,0.4);
+  }
+
+  .header__nav li{
+      margin-bottom: 5px;
+      font-size: 14px;
+  }
+
+  .header__nav li:last-child{
+      margin-bottom:0;
+  }
+
+  .grid{
+      grid-auto-rows:30vh;
+      grid-gap: 20px;
+  }
+
+  .grid .grid__item{
+      background-size:cover;
+      background-position:center center;
+  }
+
+  .grid .grid__item:first-child{
+      grid-row: span 2;
+      background-color: var(--colorOne);
+  }
+
+  .grid .grid__item:nth-child(2) {
+    grid-area: span 2 / span 2;
+    background-image: url(http://www.helloasia.com.au/wp-content/uploads/2018/10/SHINee-e1515477243173.jpg);
+  }
+  
+  .grid .grid__item:nth-child(3) {
+    background-color: var(--colorTwo);
+  }
+  
+  .grid .grid__item:nth-child(4) {
+    grid-row: span 2;
+    background-image: url(https://0.soompi.io/wp-content/uploads/2018/02/17044223/SHINee.jpg?s=900x600&e=t);
+  }
+  
+  .grid .grid__item:nth-child(5) {
+    background-color: var(--colorThree);
+  }
+  
+  .grid .grid__item:nth-child(6) {
+    background-color: var(--colorFour);
+  }
+  
+  .grid__item:nth-child(7) {
+    background-image: url(https://i.ytimg.com/vi/vhxjEXDAy6s/maxresdefault.jpg);
+  }
+  
+  .grid__item:nth-child(8) {
+    grid-area: span 2 / span 2;
+    background-color: var(--colorFive);
+  }
+  
+  .grid__item:nth-child(9) {
+    grid-row: span 2;
+    background-image: url(https://spice.eplus.jp/images/UZH2PhkL5e8Looq92pbsBQbohmDGQHGt3167zhsn2MuF10CF0wkZ05Ds21j0l7VJ);
+  }
+  
+  .grid__item:nth-child(10) {
+    grid-area: span 2 / span 2;
+    background-image: url(http://images6.fanpop.com/image/photos/40900000/shinee-everybody-shinee-40963755-1280-866.jpg);
+  }
+  
+  .grid__item:nth-child(11) {
+    background-image: url(http://i.imgur.com/cgrQrYT.jpg);
+  }
+  .grid__item:nth-child(12) {
+    background-image: url(https://www.sbs.com.au/popasia/sites/sbs.com.au.popasia/files/shinee_odd_album_group.png);
+  }
+  
+  .grid__item:nth-child(13) {
+    grid-area: span 2 / span 2;
+    background-color: var(--colorSix);
+  }
+  
+  .grid__item:nth-child(14) {
+    background-image: url(https://i1.wp.com/shineeusa.net/wp-content/uploads/2018/01/SHINeeWorld2018.jpg?fit=1845%2C969&ssl=1);  
+  }
+  
+  .grid__item:last-child {
+    background-color: var(--colorSeven);
+  }

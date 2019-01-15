@@ -1,0 +1,200 @@
+:root {
+  --padding: 0 0 0 30px;
+  --boderTop: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #fafafc;
+}
+
+.header {
+  margin-top: 72px;
+  padding: var(--padding);
+  margin-bottom: 40px;
+}
+
+.header .header__title {
+  font-size: 42px;
+}
+
+.navigation {
+  padding: var(--padding);
+  margin-bottom: 30px;
+}
+
+.navigation .navigation__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 64px);
+  grid-gap: 28px;
+}
+
+.navigation__list .navigation__item {
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  grid-gap: 18px;
+  text-align: center;
+  transition: opacity 0.1s linear;
+}
+
+.navigation__item .item__icon {
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  width: 64px;
+  transition: box-shadow 0.2s linear;
+  cursor: pointer;
+}
+
+.navigation__list:hover .navigation__item {
+  opacity: 0.5;
+}
+
+.navigation__list .navigation__item:hover {
+  opacity: 1;
+  color:#88d8c0;
+}
+
+.navigation__list .navigation__item:hover .item__icon {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05), 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navigation__list .navigation__item:hover .icon__emoji {
+  color:#88d8c0;
+}
+
+.item__icon .icon__emoji {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.navigation__item .item__text {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.featured {
+  padding: var(--padding);
+  padding-top: 25px;
+}
+
+.featured .featured-meal__title {
+  margin: 0;
+  font-size: 20px;
+}
+
+.line {
+  margin: 0 0 0 30px;
+  border-top: var(--boderTop);
+}
+
+.featured .featured__wrapper {
+  display: inline-block;
+  overflow: scroll;
+  display: grid;
+  grid-auto-columns: minmax(200px, 1fr);
+  grid-auto-flow: column;
+  grid-gap: 30px;
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
+
+.featured-meal {
+  height: 200px;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  color: white;
+  justify-content: space-between;
+  background-size: cover;
+  background-position: center center;
+}
+.featured-meal:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.05);
+}
+
+.featured-meal:first-child {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.25)),
+    url(https://smcdn.smtown.com/file/album/201801/star_5a66b1cfe83f2.jpg);
+}
+.featured-meal:last-child {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.25)),
+    url(https://smcdn.smtown.com/file/old/album/images/000/010/185/10185.jpg);
+}
+.featured-meal:nth-child(2) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.25)),
+    url(https://smcdn.smtown.com/file/old/album/images/000/000/604/604.jpg);
+}
+.featured-meal:nth-child(3) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.25)),
+    url(https://smcdn.smtown.com/file/old/album/images/000/000/602/602.jpg);
+}
+
+
+.featured-meal__button {
+  margin: 0;
+  background-color: white;
+  border-radius: 2px;
+  border-style: none;
+  width: 28px;
+  height: 26px;
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured-meal__button span {
+  color: grey;
+}
+
+.recipes {
+}
+
+.recipes__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 30px;
+}
+
+
+.recipes__list .recipe:nth-child(even) {
+  color:#88d8c0;
+}
+
+
+.recipes__list .recipe {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: var(--boderTop);
+}
+
+.recipe .recipe__name {
+  font-weight: 600;
+  padding: 15px 0;
+}
